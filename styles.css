@@ -93,10 +93,10 @@ header {
   transform: rotate(-180deg) translate(150px, 0);
   animation: textmove 3s forwards;
   display: inline-block;
-  text-shadow: 30px 21px 8px #535252;
+  text-shadow: 30px 21px 8px #6b6a6a;
   font-family: "Sofia", sans-serif;
   font-size: 60px;
-  font-weight: 400;
+  font-weight: 500;
   background: linear-gradient(to left,
       rgb(255, 0, 255),
       rgb(149, 0, 255),
@@ -105,7 +105,7 @@ header {
       yellow,
       orange,
       red);
-  -webkit-text-stroke: 1px #050505;
+  -webkit-text-stroke: 1px #000000;
   background-clip: text;
 }
 
@@ -206,9 +206,9 @@ header {
   padding: 12px 40px;
   border-radius: 50px;
   transition: 0.5s;
-  margin-top: 30px;
+  margin-top: 100px;
   color: #fff;
-  background: #34b7a7;
+  background: #54afaf;
 }
 
 @media(max-width: 1090px) {
@@ -263,7 +263,7 @@ header {
 }
 
 .banner .btn-resume:hover {
-  background: #35afa1;
+  background: #070972;
 }
 
 /*--------------------------------------------------------------
@@ -294,7 +294,8 @@ header {
 
 .disc {
   text-align: justify;
-  margin: 3px;
+  margin: 5px;
+  line-height: 30px;
   font-size: medium;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -322,7 +323,7 @@ header {
 .skills .section-title {
   justify-content: center;
   text-align: center;
-  margin-top: 250px;
+  margin-top: 200px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin-bottom: 60px;
 }
@@ -807,6 +808,10 @@ button {
   background: #34b7a7;
 }
 
+.button:hover {
+  background: #070972;
+}
+
 #footer {
   background: #dfdedb;
   padding: 30px 0;
@@ -826,6 +831,10 @@ button {
 
   .contact button {
     margin-left: 110px;
+  }
+
+  .contact .section-title::after{
+    left: calc(50% - 25px);
   }
 
   .info-item {
