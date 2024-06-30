@@ -319,6 +319,14 @@ header {
   left: calc(50% - 25px);
 }
 
+.skills .section-title {
+  justify-content: center;
+  text-align: center;
+  margin-top: 250px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin-bottom: 60px;
+}
+
 .skills .section-title::after {
   content: "";
   position: absolute;
@@ -661,24 +669,6 @@ header {
   left: calc(50% - 25px);
 }
 
-.contact .section-title {
-  text-align: center;
-  margin-top: 1000px;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  margin-bottom: 60px;
-}
-
-.contact .section-title::after {
-  content: "";
-  position: absolute;
-  display: block;
-  width: 50px;
-  height: 3px;
-  margin: 2px;
-  background: #34b7a7;
-  left: calc(50% - 20px);
-}
-
 .resume .resume-title {
   font-size: 26px;
   font-weight: 400;
@@ -740,7 +730,7 @@ header {
 .contact .section-title {
   justify-content: center;
   text-align: center;
-  margin-top: 100px;
+  margin-top: 1000px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin-bottom: 60px;
 }
@@ -753,7 +743,7 @@ header {
   height: 3px;
   margin: 2px;
   background: #34b7a7;
-  left: calc(50% - 25px);
+  left: calc(50% - 15px);
 }
 
 .info-item {
