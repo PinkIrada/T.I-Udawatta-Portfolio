@@ -1,0 +1,848 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+header {
+  position: fixed;
+  background: black;
+  padding: 5px 9%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+  width: 100%;
+  height: 13vh;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo span {
+  font-family: 'Lucida Handwriting';
+  color: #fff;
+  font-size: 30px;
+  text-shadow: 2px 2px 4px #ff00aa;
+  margin-right: auto;
+}
+
+.navlinks {
+  display: flex;
+  list-style: none;
+  float: right;
+}
+
+.navlinks a {
+  margin-top: 10px;
+  text-decoration: none;
+  color: #ffffff;
+  padding: 0 30px;
+  align-items: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: "Raleway", sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.navlinks a:hover,
+.navlinks a.active {
+  color: #ffe606;
+}
+
+#menu-button {
+  color: #ffffff;
+  font-size: 28px;
+  cursor: pointer;
+  display: none;
+  line-height: 0;
+  transition: 0.5s;
+}
+
+.banner {
+  height: 100vh;
+  width: 100%;
+  background-position: center;
+  background-image: url("images/portfolio1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  justify-content: center;
+  display: flex;
+}
+
+.banner-text {
+  width: 100%;
+  top: 40%;
+  position: absolute;
+  text-align: center;
+  font-family: "Sofia", sans-serif;
+  color: rgb(255, 255, 255);
+}
+
+.banner-text p span {
+  color: transparent;
+  opacity: 0;
+  transform: rotate(-180deg) translate(150px, 0);
+  animation: textmove 3s forwards;
+  display: inline-block;
+  text-shadow: 30px 21px 8px #535252;
+  font-family: "Sofia", sans-serif;
+  font-size: 60px;
+  font-weight: 400;
+  background: linear-gradient(to left,
+      rgb(255, 0, 255),
+      rgb(149, 0, 255),
+      rgb(3, 3, 252),
+      rgb(0, 255, 0),
+      yellow,
+      orange,
+      red);
+  -webkit-text-stroke: 1px #050505;
+  background-clip: text;
+}
+
+.banner-text p span:nth-of-type(2) {
+  animation-delay: .1s;
+}
+
+.banner-text p span:nth-of-type(3) {
+  animation-delay: .2s;
+}
+
+.banner-text p span:nth-of-type(4) {
+  animation-delay: .3s;
+}
+
+.banner-text p span:nth-of-type(5) {
+  animation-delay: .4s;
+}
+
+.banner-text p span:nth-of-type(6) {
+  animation-delay: .5s;
+}
+
+.banner-text p span:nth-of-type(7) {
+  animation-delay: .6s;
+}
+
+.banner-text p span:nth-of-type(8) {
+  animation-delay: .7s;
+}
+
+.banner-text p span:nth-of-type(9) {
+  animation-delay: .8s;
+}
+
+.banner-text p span:nth-of-type(10) {
+  animation-delay: .9s;
+}
+
+.banner-text p span:nth-of-type(11) {
+  animation-delay: .10s;
+}
+
+.banner-text p span:nth-of-type(12) {
+  animation-delay: .11s;
+}
+
+.banner-text p span:nth-of-type(13) {
+  animation-delay: .12s;
+}
+
+.banner-text p span:nth-of-type(14) {
+  animation-delay: .13s;
+}
+
+.banner-text p span:nth-of-type(15) {
+  animation-delay: .14s;
+}
+
+.banner-text p span:nth-of-type(16) {
+  animation-delay: .15s;
+}
+
+.banner-text p span:nth-of-type(17) {
+  animation-delay: .16s;
+}
+
+.banner-text p span:nth-of-type(18) {
+  animation-delay: .17s;
+}
+
+.banner-text p span:nth-of-type(19) {
+  animation-delay: .18s;
+}
+
+.banner-text p span:nth-of-type(20) {
+  animation-delay: .19s;
+}
+
+@keyframes textmove {
+  10% {
+    opacity: 1;
+  }
+
+  100% {
+    transform: rotate(0deg) translate(0);
+    opacity: 1;
+  }
+}
+
+.banner .btn-resume {
+  font-family: "Raleway", sans-serif;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 12px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 12px 40px;
+  border-radius: 50px;
+  transition: 0.5s;
+  margin-top: 30px;
+  color: #fff;
+  background: #34b7a7;
+}
+
+@media(max-width: 1090px) {
+  .logo {
+    font-size: 10px;
+  }
+
+  .banner-text p span {
+    font-size: 40px;
+    font-weight: 100;
+  }
+
+  #menu-button {
+    display: block;
+  }
+
+  .navlinks {
+    position: absolute;
+    top: 80%;
+    right: -100%;
+    width: 200px;
+    height: 35vh;
+    background: #5a5959;
+    display: block;
+    flex-direction: column;
+    justify-content: flex-start;
+    border-radius: 10px;
+    transition: all .50s ease;
+  }
+
+  .navlinks a {
+    display: block;
+    margin: 12px 0;
+    padding: 0 25px;
+    transition: all .50s ease;
+    text-align: center;
+  }
+
+  .navlinks a:hover,
+  .navlinks a.active:hover {
+    color: rgb(217, 255, 0);
+    transform: translateX(10px);
+  }
+
+  .navlinks a:active {
+    color: rgb(217, 255, 0);
+  }
+
+  .navlinks.open {
+    right: 2%;
+  }
+}
+
+.banner .btn-resume:hover {
+  background: #35afa1;
+}
+
+/*--------------------------------------------------------------
+# End of Header
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# About
+--------------------------------------------------------------*/
+
+.about {
+  position: relative;
+  background-image: url("images/portfolio42.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 50px;
+}
+
+.about .main-title {
+  justify-content: center;
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 50px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.disc {
+  text-align: justify;
+  margin: 3px;
+  font-size: medium;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.about .section-title {
+  justify-content: center;
+  text-align: center;
+  margin-top: 200px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin-bottom: 60px;
+}
+
+.about .section-title::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 3px;
+  margin: 2px;
+  background: #34b7a7;
+  left: calc(50% - 25px);
+}
+
+.skills .section-title::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 3px;
+  margin: 2px;
+  background: #34b7a7;
+  left: calc(50% - 15px);
+}
+
+.about .main-title::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 3px;
+  background: #34b7a7;
+  left: calc(50% - 25px);
+}
+
+.about .content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.about .content ul li {
+  padding-bottom: 10px;
+}
+
+.skills-content {
+  padding: 32pxm 40px;
+  border-radius: 10px;
+}
+
+.skills-content .bar {
+  margin: 32px 0;
+}
+
+.skills-content .bar:first-child {
+  margin-top: 0px;
+}
+
+.skills-content .bar .info {
+  margin-bottom: 5px;
+}
+
+.skills-content .bar .info span {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.progress-line {
+  height: 12px;
+  width: 100%;
+  background: #f0f0f0;
+  border-radius: 10px;
+  position: relative;
+  transform: scaleX(0);
+  animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+  transform-origin: left;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.05), 0px 1px(255, 255, 255, 255, 0.8);
+}
+
+@keyframes animate {
+  100% {
+    transform: scaleX(1);
+  }
+}
+
+.progress-line span {
+  height: 100%;
+  width: 80%;
+  background: #0078ff;
+  position: absolute;
+  border-radius: 10px;
+  transform: scaleX(0);
+  animation: animate 1s 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+  transform-origin: left;
+}
+
+.progress-line.net span {
+  width: 80%;
+}
+
+.progress-line.flutter span {
+  width: 40%;
+}
+
+.progress-line.mvc span {
+  width: 50%;
+}
+
+.progress-line.c-sharp span {
+  width: 80%;
+}
+
+.progress-line.html span {
+  width: 50%;
+}
+
+.progress-line.css span {
+  width: 40%;
+}
+
+.progress-line.javascript span {
+  width: 50%;
+}
+
+.progress-line.sql span {
+  width: 70%;
+}
+
+.bar .progress-line span::before {
+  position: absolute;
+  content: "";
+  height: 0;
+  width: 0;
+  border: 7px solid transparent;
+  border-bottom-width: 0;
+  border-right-width: 0;
+  border-top-color: #1d1414;
+  right: 0;
+  top: -10px;
+}
+
+.bar .progress-line span::after {
+  position: absolute;
+  right: 0;
+  top: -35px;
+  background: #000;
+  color: #fff;
+  padding: 1px 8px;
+  border-radius: 3px;
+}
+
+.progress-line.net span::after {
+  content: "80%";
+}
+
+.progress-line.flutter span::after {
+  content: "40%";
+}
+
+.progress-line.mvc span::after {
+  content: "50%";
+}
+
+.progress-line.c-sharp span::after {
+  content: "80%";
+}
+
+.progress-line.html span::after {
+  content: "50%";
+}
+
+.progress-line.css span::after {
+  content: "40%";
+}
+
+.progress-line.javascript span::after {
+  content: "50%";
+}
+
+.progress-line.sql span::after {
+  content: "70%";
+}
+
+@keyframes fadeInUp {
+  from {
+    transform: translate3d(0, 40px, 0)
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+    opacity: 1
+  }
+}
+
+@-webkit-keyframes fadeInUp {
+  from {
+    transform: translate3d(0, 40px, 0)
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+    opacity: 1
+  }
+}
+
+.animated {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-fill-mode: both
+}
+
+.animatedFadeInUp {
+  opacity: 0
+}
+
+.fadeInUp {
+  opacity: 0;
+  animation-name: fadeInUp;
+  -webkit-animation-name: fadeInUp;
+}
+
+#footer {
+  background: #dfdedb;
+  padding: 30px 0;
+  color: #222222;
+  font-size: 14px;
+  text-align: center;
+}
+
+@media (max-width:1090px) {
+  .about .main-title {
+    margin-top: 100px;
+  }
+
+  #skills .section-title {
+    margin-top: 90px;
+  }
+
+  .about .section-title {
+    margin-top: 50px;
+  }
+
+  .skills .section-title::after {
+    left: calc(50% - 30px);
+  }
+
+}
+
+/*--------------------------------------------------------------
+# End of About
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# Projects
+--------------------------------------------------------------*/
+.projects {
+  position: relative;
+  background-image: url("images/portfolio42.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 50px;
+}
+
+.projects .main-title {
+  justify-content: center;
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 30px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.projects .main-title::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 3px;
+  background: #34b7a7;
+  left: calc(50% - 25px);
+}
+
+.project1 {
+  margin-top: 70px;
+}
+
+.project1 ul {
+  padding-left: 90px;
+}
+
+.project2 ul {
+  padding-left: 90px;
+}
+
+.project3 ul {
+  padding-left: 90px;
+}
+
+.line {
+  width: 100%;
+  height: 1px;
+  border: 1px solid #34b7a7;
+  background-color: #34b7a7;
+  display: block;
+}
+
+#footer {
+  background: #dfdedb;
+  padding: 30px 0;
+  color: #222222;
+  font-size: 14px;
+  text-align: center;
+}
+
+@media (max-width:1090px) {
+  .projects .main-title {
+    margin-top: 100px;
+  }
+}
+
+/*--------------------------------------------------------------
+# End of Projects
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# Resume
+--------------------------------------------------------------*/
+.resume {
+  position: relative;
+  background-image: url("images/portfolio42.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 50px;
+}
+
+.resume .main-title {
+  justify-content: center;
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 30px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.resume .main-title::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 3px;
+  background: #34b7a7;
+  left: calc(50% - 25px);
+}
+
+.contact .section-title {
+  text-align: center;
+  margin-top: 1000px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin-bottom: 60px;
+}
+
+.contact .section-title::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 3px;
+  margin: 2px;
+  background: #34b7a7;
+  left: calc(50% - 20px);
+}
+
+.resume .resume-title {
+  font-size: 26px;
+  font-weight: 400;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #222222;
+}
+
+.resume .resume-item {
+  padding: 0 0 20px 20px;
+  margin-top: -2px;
+  border-left: 2px solid #34b7a7;
+  position: relative;
+}
+
+.resume .resume-item h4 {
+  line-height: 18px;
+  font-size: 18px;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  color: #1d685f;
+  margin-bottom: 10px;
+}
+
+.resume .resume-item h5 {
+  font-size: 16px;
+  background: #effbf9;
+  padding: 5px 15px;
+  display: inline-block;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #34b7a7;
+}
+
+.resume .resume-item ul {
+  padding-left: 20px;
+}
+
+.resume .resume-item ul li {
+  padding-bottom: 10px;
+}
+
+.resume .resume-item:last-child {
+  padding-bottom: 0;
+}
+
+.resume .resume-item::before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50px;
+  left: -9px;
+  top: 0;
+  background: #fff;
+  border: 2px solid #34b7a7;
+}
+
+.contact .section-title {
+  justify-content: center;
+  text-align: center;
+  margin-top: 100px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin-bottom: 60px;
+}
+
+.contact .section-title::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 3px;
+  margin: 2px;
+  background: #34b7a7;
+  left: calc(50% - 25px);
+}
+
+.info-item {
+  display: inline;
+  text-align: center;
+}
+
+form h2 {
+  color: #1b1f1b;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+form .input-box {
+  display: flex;
+  justify-content: space-between;
+}
+
+.field .item {
+  width: 100%;
+  padding: 8px;
+  font-size: 16px;
+  margin: 12px 0;
+}
+
+.input-box .input-field {
+  width: 48.5%
+}
+
+.field .error-text {
+  font-size: 14.5px;
+  color: rgb(173, 8, 8);
+  text-align: left;
+  margin: -5px 0 10px;
+  display: none;
+}
+
+.field.error .error-text {
+  display: block;
+}
+
+form .textarea-field .item {
+  resize: none;
+}
+
+form .textarea-field .error-text {
+  margin-top: -10px;
+}
+
+button {
+  font-family: "Raleway", sans-serif;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 12px;
+  display: inline-block;
+  padding: 12px 40px;
+  border-radius: 50px;
+  margin-top: 30px;
+  margin-left: 320px;
+  color: #fff;
+  background: #34b7a7;
+}
+
+#footer {
+  background: #dfdedb;
+  padding: 30px 0;
+  color: #222222;
+  font-size: 14px;
+  text-align: center;
+}
+
+@media (max-width:1090px) {
+  .resume .main-title {
+    margin-top: 100px;
+  }
+
+  .contact .section-title {
+    margin-top: 90px;
+  }
+
+  .contact button {
+    margin-left: 110px;
+  }
+
+  .info-item {
+    display: inline-flex;
+  }
+}
+
+/*--------------------------------------------------------------
+# End of Resume
+--------------------------------------------------------------*/
